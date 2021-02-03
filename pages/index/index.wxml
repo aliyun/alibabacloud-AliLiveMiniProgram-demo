@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="pusher" style="position:fixed; top:0;">
+    <view class="top-input" style="display:flex; flex-flow:row;">
+      <input class="url-input"  bindinput="bindPushUrlInput" placeholder="请输入推流地址"/>
+      <button class="url-button" hover-class="url-button-hover" bindtap="bindPushButton">Push</button>
+    </view>
+    <view id='video-push'>  
+      <live-pusher  class="pusherwindow"
+                    wx:if="{{hasPushUrl}}"
+                    url="{{pushUrl}}"
+                    id="pusher"
+                    mode="HD"
+                    autopush='true'
+                    bindstatechange="onPushStateChange">
+      </live-pusher>  
+      <view class="empty-window" wx:if="{{!hasPushUrl}}">No Previwe</view>
+    </view>
+  </view>
+  <view class="player"  style="position:fixed; top:0;">
+    <view class="top-input" style="display:flex; flex-flow:row;">
+      <input class="url-input"  bindinput="bindPlayUrlInput" placeholder="请输入播流地址"/>
+      <button class="url-button bubble" hover-class="url-button-hover" bindtap="bindPlayButton">Play</button>
+    </view>
+    <view id='video-play'>  
+      <live-player class="playerwindow"
+                   wx:if="{{hasPlayUrl}}"
+                   src="{{playUrl}}"
+                   id="player"
+                   mode="live"
+                   object-fit="fillCrop"
+                   autoplay='true'
+                   bindstatechange="onPlayStateChange" 
+                   binderror="onPlayError">
+      </live-player>
+      <view class="empty-window" wx:if="{{!hasPlayUrl}}">No Previwe</view>
+    </view>
+  </view>
+</view>
+
+
+

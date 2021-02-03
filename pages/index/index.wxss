@@ -1,0 +1,79 @@
+/**index.wxss**/
+
+.top-input{
+  margin-top: 1rpx;
+  padding: 4px;
+  width: 700rpx;
+  height: 70rpx;
+  border-radius: 20rpx;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(0, 170, 0);
+}
+
+.url-input{
+  width: 620rpx;
+  height: 70rpx;
+}
+
+.url-button{
+  font-size: 12px;
+  width: 20% !important;
+  padding-right: 0%;
+  padding-left: 0%;
+  padding-top: 2%;
+  color: #fff;
+  border-radius: 10rpx;
+  background: #07c160;
+}
+
+.url-button-hover{
+  font-size: 12px;
+  width: 20% !important;
+  padding-right: 0%;
+  padding-left: 0%;
+  padding-top: 2%;
+  color: #fff;
+  border-radius: 10rpx;
+  background: #5f806e;
+}
+
+.player {
+  margin-top: 600rpx;
+}
+
+.empty-window{
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  padding: 220rpx 280rpx;
+  align-items: center;
+  font-size: 28rpx;
+  color: rgb(120, 120, 120);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(150, 150, 150);
+  background: rgb(0, 0, 0);
+}
+
+.pusherwindow{
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  height: 480rpx;
+  width: 718rpx;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(150, 150, 150);
+}
+
+.playerwindow{
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 0%;
+  height: 480rpx;
+  width: 718rpx;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(150, 150, 150);
+}
